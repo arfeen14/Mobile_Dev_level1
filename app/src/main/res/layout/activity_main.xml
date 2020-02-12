@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/conjunction_and"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="@+id/LetterA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BothLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="9dp"
+        android:text="@string/a_b"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Title"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/LetterB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="66dp"
+        android:text="@string/b"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/answer4"
+        app:layout_constraintStart_toStartOf="@+id/letterT1"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <EditText
+        android:id="@+id/answer3"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/answer4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/letterT4"
+        app:layout_constraintTop_toTopOf="@+id/answer2"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <TextView
+        android:id="@+id/letterF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/F2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/letterT4"
+        app:layout_constraintEnd_toStartOf="@+id/letterT4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/letterT4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="63dp"
+        android:text="@string/T4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toStartOf="@+id/answer3"
+        app:layout_constraintStart_toEndOf="@+id/letterF2"
+        app:layout_constraintTop_toBottomOf="@+id/letterF1" />
+
+    <EditText
+        android:id="@+id/answer2"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/letterF1"
+        app:layout_constraintTop_toTopOf="@+id/letterF1" />
+
+    <TextView
+        android:id="@+id/letterF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="68dp"
+        android:text="@string/F1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toStartOf="@+id/answer2"
+        app:layout_constraintStart_toEndOf="@+id/letterT3"
+        app:layout_constraintTop_toBottomOf="@+id/letterT2" />
+
+    <TextView
+        android:id="@+id/letterT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="49dp"
+        android:text="@string/T3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/letterF1"
+        app:layout_constraintEnd_toStartOf="@+id/letterF1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/LetterA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/a"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/letterT2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <EditText
+        android:id="@+id/answer4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/letterF4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/letterF4"
+        app:layout_constraintTop_toTopOf="@+id/letterF4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/letterF4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/F4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toStartOf="@+id/answer4"
+        app:layout_constraintStart_toEndOf="@+id/letterF3"
+        app:layout_constraintTop_toBottomOf="@+id/letterT4" />
+
+    <TextView
+        android:id="@+id/letterF3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/F3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/letterF4"
+        app:layout_constraintEnd_toStartOf="@+id/letterF4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/answer1"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/answer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/letterT2"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/letterT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/T1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/letterT2"
+        app:layout_constraintEnd_toStartOf="@+id/letterT2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/letterT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="68dp"
+        android:text="@string/T2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toStartOf="@+id/answer1"
+        app:layout_constraintStart_toEndOf="@+id/letterT1"
+        app:layout_constraintTop_toBottomOf="@+id/LetterB" />
+
+    <Button
+        android:id="@+id/submitB"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
